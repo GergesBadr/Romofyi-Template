@@ -55,6 +55,32 @@ ul{
 a{
     text-decoration: none;
 }
+.scroll-btn{
+    position: fixed;
+    right: 15px;
+    bottom: 15px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--main-color);
+    color: var(--sec-color);
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.scroll-btn:hover{
+    background-color: var(--sec-color);
+    color: var(--main-color);
+}
 /* end global rules */
 /* start mail */
 .mail .container{
@@ -627,5 +653,64 @@ font-weight: bold;
     -webkit-text-fill-color: transparent;
     background-clip: text;
     -webkit-background-clip: text;
+}
+.footer .info{
+    background-color: #ecf3fc;
+    padding: 15px 0px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+@media (max-width: 991px){
+    .footer .info{
+        flex-direction: column;
+    }
+}
+.footer .info .call a{
+    color: var(--sec-color);
+    font-size: 18px;
+}
+.footer .info .call a:hover{
+    text-decoration: underline;
+}
+.footer .info .call a::before{
+    font-family: "Font Awesome 5 Free";
+    content: "\f095";
+    font-weight: 900;
+}
+@media (max-width: 991px){
+    .footer .info .links{
+        margin: 15px auto;
+    }
+}
+.footer .info .links ul{
+    display: flex;
+}
+.footer .info .links ul li a{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 15px;
+    width: 40px;
+    height: 40px;
+    background-color: var(--sec-color);
+    color: white;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    transition: var(--main-transition);
+    -webkit-transition: var(--main-transition);
+    -moz-transition: var(--main-transition);
+    -ms-transition: var(--main-transition);
+    -o-transition: var(--main-transition);
+}
+.footer .info .links ul li a:hover{
+    background-color: var(--main-color);
+}
+.footer .info .text span{
+    font-size: 18px;
+    color: var(--sec-color);
 }
 /* end footer */
